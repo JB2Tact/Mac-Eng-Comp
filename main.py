@@ -192,9 +192,7 @@ def initialize_agents(center_coords, num_trucks=5, num_drones=3, num_volunteers=
     
     return agents
 
-# -----------------------------
-# 4️⃣ Assign Buildings to Agents
-# -----------------------------
+
 def assign_buildings_to_agents(agents, buildings):
     """Simple round-robin assignment of buildings to agents"""
     for i, agent in enumerate(agents):
@@ -238,6 +236,53 @@ def compute_routes(agents):
                 print(f"  Waypoints: {len(route['geometry'])} points")
             else:
                 print(f"\n{agent['id']} - Failed to get route")
+
+# -----------------------------
+# 7️⃣ New Features: Priority and Agent Speeds
+# -----------------------------
+
+# Realistic average speeds (m/s) for agents
+AGENT_SPEEDS = {
+    'truck': 12,       # ~43 km/h
+    'drone': 15,       # ~54 km/h
+    'volunteer': 2.5   # ~9 km/h walking
+}
+
+def add_agent_speeds(agents):
+    """Add speed attribute to each agent"""
+    for agent in agents:
+        agent['speed'] = AGENT_SPEEDS.get(agent['type'], 1)  # default 1 m/s
+
+def add_priority_scores(buildings, center_coords):
+    """Assign a priority score to buildings based on type, hazard, and distance"""
+    BUILDING_TYPE_WEIGHT = {'residential': 1.0, 'commercial': 1.5, 'mixed': 1.2}
+    for building in buildings:
+        hazard_intensity = random.uniform(0, 1)  # simulate hazard level
+        distance_to_center = haversine_distance(
+            building['lon'], building['lat'],
+            center_coords[0], center_coords[1]
+        )
+        building['priority_score'] = hazard_intensity * BUILDING_TYPE_WEIGHT.get(building['type'], 1) / (distance_to_center + 1)
+    
+    # Sort buildings by descending priority
+    buildings.sort(key=lambda b: b['priority_score'], reverse=True)
+
+def assign_by_priority(agents, buildings):
+    """Assign buildings in descending priority order to agents"""
+    unassigned = buildings.copy()
+    for agent in agents:
+        if not unassigned:
+            break
+        building = unassigned.pop(0)
+        agent['target_building'] = building
+        print(f"Assigned {building['id']} (priority={building['priority_score']:.2f}) to {agent['id']}")
+
+def update_route_durations_by_speed(agents):
+    """Update route durations using each agent's speed"""
+    for agent in agents:
+        if agent['route']:
+            speed = agent.get('speed', 1)
+            agent['route']['duration'] = agent['route']['distance'] / speed
 
 # -----------------------------
 # 6️⃣ Main Execution
