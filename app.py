@@ -3,7 +3,7 @@ from flask import Flask, render_template, jsonify, request
 import random
 import os
 from dotenv import load_dotenv
-from main import generate_sample_buildings, initialize_agents, compute_routes, geocode_location, haversine_distance
+from main import initialize_agents, compute_routes, geocode_location, haversine_distance
 
 # Load environment variables from .env file
 load_dotenv()
