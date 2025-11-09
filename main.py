@@ -2,11 +2,16 @@ import requests
 import json
 from math import radians, cos, sin, asin, sqrt
 import random
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # -----------------------------
 # Configuration
 # -----------------------------
-MAPBOX_ACCESS_TOKEN = "YOUR_MAPBOX_ACCESS_TOKEN"  # Replace with your token
+MAPBOX_ACCESS_TOKEN = os.getenv('MAPBOX_ACCESS_TOKEN')
 place_name = "Pasadena, California, USA"
 
 # Pasadena, CA bounding box (approximate)
@@ -96,7 +101,9 @@ def geocode_location(place_name):
             return coords
     return None
 
-
+# -----------------------------
+# 2️⃣ Generate Sample Buildings
+# -----------------------------
 def generate_sample_buildings(num_buildings=50):
     """Generate random building locations within bounding box"""
     buildings = []
@@ -281,8 +288,9 @@ def main():
 
 if __name__ == "__main__":
     # Check if token is set
-    if MAPBOX_ACCESS_TOKEN == "YOUR_MAPBOX_ACCESS_TOKEN":
-        print("⚠️  Please set your MAPBOX_ACCESS_TOKEN in the code")
-        print("   Get your token at: https://account.mapbox.com/access-tokens/")
+    if not MAPBOX_ACCESS_TOKEN:
+        print("⚠️  Please set your MAPBOX_ACCESS_TOKEN environment variable")
+        print("   Create a .env file with: MAPBOX_ACCESS_TOKEN=your_token_here")
+        print("   Or get your token at: https://account.mapbox.com/access-tokens/")
     else:
         main()
