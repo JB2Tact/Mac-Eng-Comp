@@ -101,25 +101,6 @@ def geocode_location(place_name):
             return coords
     return None
 
-# -----------------------------
-# 2️⃣ Generate Sample Buildings
-# -----------------------------
-def generate_sample_buildings(num_buildings=50):
-    """Generate random building locations within bounding box"""
-    buildings = []
-    
-    for i in range(num_buildings):
-        lon = random.uniform(BBOX['min_lon'], BBOX['max_lon'])
-        lat = random.uniform(BBOX['min_lat'], BBOX['max_lat'])
-        
-        buildings.append({
-            'id': f'building_{i}',
-            'lon': lon,
-            'lat': lat,
-            'type': random.choice(['residential', 'commercial', 'mixed'])
-        })
-    
-    return buildings
 
 # Alternatively, you can use Mapbox Tilequery API to get real building data
 def get_buildings_from_mapbox(center_coords, radius=1000):
@@ -284,6 +265,7 @@ def update_route_durations_by_speed(agents):
             speed = agent.get('speed', 1)
             agent['route']['duration'] = agent['route']['distance'] / speed
 
+
 # -----------------------------
 # 6️⃣ Main Execution
 # -----------------------------
@@ -300,10 +282,25 @@ def main():
     print(f"\n📍 Center location: {place_name}")
     print(f"   Coordinates: {center_coords}")
     
-    # Generate buildings (or fetch from Mapbox)
-    print(f"\n🏢 Generating building locations...")
-    buildings = generate_sample_buildings(num_buildings=30)
-    print(f"   Created {len(buildings)} buildings")
+    # Fetch real building footprints from Mapbox
+    print(f"\n🏢 Fetching building locations from Mapbox...")
+    buildings = get_buildings_from_mapbox(center_coords, radius=1000)  # radius in meters
+    print(f"   Retrieved {len(buildings)} buildings")
+    
+    # If no buildings found, create some sample buildings
+    if len(buildings) == 0:
+        print("   No buildings found. Creating sample buildings...")
+        buildings = []
+        for i in range(30):
+            lon = random.uniform(BBOX['min_lon'], BBOX['max_lon'])
+            lat = random.uniform(BBOX['min_lat'], BBOX['max_lat'])
+            buildings.append({
+                'id': f'building_{i}',
+                'lon': lon,
+                'lat': lat,
+                'type': random.choice(['residential', 'commercial', 'mixed'])
+            })
+        print(f"   Created {len(buildings)} sample buildings")
     
     # Initialize agents
     print(f"\n🚛 Initializing agents...")
@@ -312,13 +309,22 @@ def main():
     print(f"   Drones: {sum(1 for a in agents if a['type'] == 'drone')}")
     print(f"   Volunteers: {sum(1 for a in agents if a['type'] == 'volunteer')}")
     
-    # Assign buildings
+    # Add speeds to agents
+    add_agent_speeds(agents)
+    
+    # Add priority scores to buildings
+    add_priority_scores(buildings, center_coords)
+    
+    # Assign buildings by priority
     print(f"\n📋 Assigning buildings to agents...")
-    assign_buildings_to_agents(agents, buildings)
+    assign_by_priority(agents, buildings)
     
     # Compute routes
     print(f"\n🗺️  Computing routes...")
     compute_routes(agents)
+    
+    # Update route durations based on agent speeds
+    update_route_durations_by_speed(agents)
     
     print("\n✅ Route planning complete!")
     
@@ -330,6 +336,11 @@ def main():
     print(f"   Total distance: {total_distance/1000:.1f} km")
     print(f"   Total time: {total_duration/60:.1f} minutes")
     print(f"   Average per agent: {total_distance/len(agents)/1000:.1f} km")
+    
+    # Save agents data to JSON
+    with open('agents.json', 'w') as f:
+        json.dump(agents, f, indent=2)
+    print(f"\n💾 Saved agent data to agents.json")
 
 if __name__ == "__main__":
     # Check if token is set
