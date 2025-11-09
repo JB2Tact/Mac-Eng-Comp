@@ -1,0 +1,73 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Simulation Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        button {
+            margin: 10px 0;
+        }
+        #output {
+            margin-top: 20px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Government Simulation Program</h1>
+
+    <button id="generate-buildings-btn">Generate Buildings</button>
+    <button id="initialize-agents-btn">Initialize Agents</button>
+    <button id="compute-routes-btn">Compute Routes</button>
+
+    <div id="output"></div>
+
+    <script>
+        document.getElementById('generate-buildings-btn').addEventListener('click', function() {
+            fetch('/generate_buildings')
+                .then(response => response.json())
+                .then(data => {
+                    let output = document.getElementById('output');
+                    output.textContent = "Generated Buildings:\n" + JSON.stringify(data, null, 2);
+                });
+        });
+
+        document.getElementById('initialize-agents-btn').addEventListener('click', function() {
+            fetch('/initialize_agents')
+                .then(response => response.json())
+                .then(data => {
+                    let output = document.getElementById('output');
+                    output.textContent = "Initialized Agents:\n" + JSON.stringify(data, null, 2);
+                });
+        });
+
+        document.getElementById('compute-routes-btn').addEventListener('click', function() {
+            fetch('/initialize_agents')
+                .then(response => response.json())
+                .then(agents => {
+                    fetch('/compute_routes', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ agents: agents })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        let output = document.getElementById('output');
+                        output.textContent = "Computation Results:\n";
+                        output.textContent += `Total distance: ${data.total_distance} km\n`;
+                        output.textContent += `Total duration: ${data.total_duration} minutes\n`;
+                        output.textContent += "Agent Routes:\n" + JSON.stringify(data.agents, null, 2);
+                    });
+                });
+        });
+    </script>
+</body>
+</html>
