@@ -13,6 +13,7 @@ except ImportError:
     GEMINI_AVAILABLE = False
     print("⚠️  google-generativeai package not installed. Install with: pip install google-generativeai")
 
+
 # Load environment variables from .env file
 load_dotenv()
 
