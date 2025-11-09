@@ -1,0 +1,3679 @@
+[
+  {
+    "id": "truck_0",
+    "type": "truck",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 206081683,
+      "lon": -118.1503589451313,
+      "lat": 34.14565156179755,
+      "type": "building",
+      "priority_score": 0.02364329508451845
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150478,
+          34.145659
+        ],
+        [
+          -118.150478,
+          34.145652
+        ]
+      ],
+      "distance": 13.742,
+      "duration": 1.1451666666666667,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                179
+              ],
+              "duration": 1.937,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "primary"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 1.937,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "bearings": [
+                89,
+                180,
+                269,
+                359
+              ],
+              "entry": [
+                false,
+                true,
+                false,
+                false
+              ],
+              "in": 3,
+              "turn_weight": 0.5,
+              "turn_duration": 0.01,
+              "mapbox_streets_v8": {
+                "class": "primary"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 1,
+              "geometry_index": 1,
+              "location": [
+                -118.150478,
+                34.145659
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Drive south on South Fair Oaks Avenue.",
+            "bearing_after": 179,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "South Fair Oaks Avenue",
+          "duration": 2.072,
+          "distance": 13.742,
+          "driving_side": "right",
+          "weight": 2.562,
+          "mode": "driving",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150478,
+                34.145659
+              ],
+              [
+                -118.150478,
+                34.145652
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                0
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 2,
+              "location": [
+                -118.150478,
+                34.145652
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the left.",
+            "modifier": "left",
+            "bearing_after": 0,
+            "bearing_before": 180,
+            "location": [
+              -118.150478,
+              34.145652
+            ]
+          },
+          "name": "South Fair Oaks Avenue",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "driving",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150478,
+                34.145652
+              ],
+              [
+                -118.150478,
+                34.145652
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "driving",
+    "speed": 12
+  },
+  {
+    "id": "truck_1",
+    "type": "truck",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 206081722,
+      "lon": -118.15020740032196,
+      "lat": 34.14565378162956,
+      "type": "building",
+      "priority_score": 0.023387234510400423
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150361,
+          34.145778
+        ],
+        [
+          -118.150209,
+          34.145779
+        ]
+      ],
+      "distance": 25.013,
+      "duration": 2.084416666666667,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                88
+              ],
+              "duration": 2.323,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "primary"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 2.323,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "bearings": [
+                90,
+                179,
+                268,
+                358
+              ],
+              "entry": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "in": 2,
+              "turn_weight": 0.5,
+              "turn_duration": 0.013,
+              "mapbox_streets_v8": {
+                "class": "primary"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "geometry_index": 1,
+              "location": [
+                -118.150361,
+                34.145778
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Drive east on East Colorado Boulevard/US 66 HISTORIC.",
+            "bearing_after": 88,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "East Colorado Boulevard",
+          "duration": 5.313,
+          "distance": 25.013,
+          "driving_side": "right",
+          "weight": 5.8,
+          "mode": "driving",
+          "ref": "US 66 HISTORIC",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150361,
+                34.145778
+              ],
+              [
+                -118.150209,
+                34.145779
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                270
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 2,
+              "location": [
+                -118.150209,
+                34.145779
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the right.",
+            "modifier": "right",
+            "bearing_after": 0,
+            "bearing_before": 90,
+            "location": [
+              -118.150209,
+              34.145779
+            ]
+          },
+          "name": "East Colorado Boulevard",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "driving",
+          "ref": "US 66 HISTORIC",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150209,
+                34.145779
+              ],
+              [
+                -118.150209,
+                34.145779
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "driving",
+    "speed": 12
+  },
+  {
+    "id": "truck_2",
+    "type": "truck",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 206001566,
+      "lon": -118.15058559179306,
+      "lat": 34.145647122133326,
+      "type": "building",
+      "priority_score": 0.023189982159203433
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150478,
+          34.145659
+        ],
+        [
+          -118.150478,
+          34.145647
+        ]
+      ],
+      "distance": 14.237,
+      "duration": 1.1864166666666667,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                179
+              ],
+              "duration": 1.937,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "primary"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 1.937,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "bearings": [
+                89,
+                180,
+                269,
+                359
+              ],
+              "entry": [
+                false,
+                true,
+                false,
+                false
+              ],
+              "in": 3,
+              "turn_weight": 0.5,
+              "turn_duration": 0.01,
+              "mapbox_streets_v8": {
+                "class": "primary"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 1,
+              "geometry_index": 1,
+              "location": [
+                -118.150478,
+                34.145659
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Drive south on South Fair Oaks Avenue.",
+            "bearing_after": 179,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "South Fair Oaks Avenue",
+          "duration": 2.146,
+          "distance": 14.237,
+          "driving_side": "right",
+          "weight": 2.636,
+          "mode": "driving",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150478,
+                34.145659
+              ],
+              [
+                -118.150478,
+                34.145647
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                0
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 2,
+              "location": [
+                -118.150478,
+                34.145647
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the right.",
+            "modifier": "right",
+            "bearing_after": 0,
+            "bearing_before": 180,
+            "location": [
+              -118.150478,
+              34.145647
+            ]
+          },
+          "name": "South Fair Oaks Avenue",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "driving",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150478,
+                34.145647
+              ],
+              [
+                -118.150478,
+                34.145647
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "driving",
+    "speed": 12
+  },
+  {
+    "id": "truck_3",
+    "type": "truck",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 206001563,
+      "lon": -118.1507733464241,
+      "lat": 34.145649341965466,
+      "type": "building",
+      "priority_score": 0.020391063388747792
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150597,
+          34.145775
+        ],
+        [
+          -118.150773,
+          34.145775
+        ]
+      ],
+      "distance": 26.978,
+      "duration": 2.2481666666666666,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                270
+              ],
+              "duration": 1.493,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "primary"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 1.493,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "bearings": [
+                90,
+                179,
+                270,
+                359
+              ],
+              "entry": [
+                false,
+                false,
+                true,
+                false
+              ],
+              "in": 0,
+              "turn_weight": 0.5,
+              "turn_duration": 0.01,
+              "mapbox_streets_v8": {
+                "class": "primary"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 2,
+              "geometry_index": 1,
+              "location": [
+                -118.150597,
+                34.145775
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Drive west on West Colorado Boulevard/US 66 HISTORIC.",
+            "bearing_after": 270,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "West Colorado Boulevard",
+          "duration": 3.779,
+          "distance": 26.978,
+          "driving_side": "right",
+          "weight": 4.268,
+          "mode": "driving",
+          "ref": "US 66 HISTORIC",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150597,
+                34.145775
+              ],
+              [
+                -118.150773,
+                34.145775
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                90
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 2,
+              "location": [
+                -118.150773,
+                34.145775
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the left.",
+            "modifier": "left",
+            "bearing_after": 0,
+            "bearing_before": 270,
+            "location": [
+              -118.150773,
+              34.145775
+            ]
+          },
+          "name": "West Colorado Boulevard",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "driving",
+          "ref": "US 66 HISTORIC",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150773,
+                34.145775
+              ],
+              [
+                -118.150773,
+                34.145775
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "driving",
+    "speed": 12
+  },
+  {
+    "id": "truck_4",
+    "type": "truck",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 206081685,
+      "lon": -118.14995661377907,
+      "lat": 34.14565378162956,
+      "type": "building",
+      "priority_score": 0.019017869552914554
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150361,
+          34.145778
+        ],
+        [
+          -118.150203,
+          34.145779
+        ],
+        [
+          -118.150006,
+          34.145779
+        ],
+        [
+          -118.149958,
+          34.145779
+        ]
+      ],
+      "distance": 48.096,
+      "duration": 4.008,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                88
+              ],
+              "duration": 2.323,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "primary"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 2.323,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "entry": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "in": 2,
+              "bearings": [
+                90,
+                179,
+                268,
+                358
+              ],
+              "duration": 3.095,
+              "turn_weight": 0.5,
+              "turn_duration": 0.013,
+              "mapbox_streets_v8": {
+                "class": "primary"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 3.583,
+              "geometry_index": 1,
+              "location": [
+                -118.150361,
+                34.145778
+              ]
+            },
+            {
+              "entry": [
+                true,
+                false
+              ],
+              "in": 1,
+              "bearings": [
+                90,
+                270
+              ],
+              "duration": 3.843,
+              "mapbox_streets_v8": {
+                "class": "primary"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 3.843,
+              "geometry_index": 2,
+              "location": [
+                -118.150203,
+                34.145779
+              ]
+            },
+            {
+              "bearings": [
+                89,
+                270
+              ],
+              "entry": [
+                true,
+                false
+              ],
+              "in": 1,
+              "mapbox_streets_v8": {
+                "class": "primary"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "geometry_index": 3,
+              "location": [
+                -118.150006,
+                34.145779
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Drive east on East Colorado Boulevard/US 66 HISTORIC.",
+            "bearing_after": 88,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "East Colorado Boulevard",
+          "duration": 10.17,
+          "distance": 48.096,
+          "driving_side": "right",
+          "weight": 10.657,
+          "mode": "driving",
+          "ref": "US 66 HISTORIC",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150361,
+                34.145778
+              ],
+              [
+                -118.150203,
+                34.145779
+              ],
+              [
+                -118.150006,
+                34.145779
+              ],
+              [
+                -118.149958,
+                34.145779
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                269
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 4,
+              "location": [
+                -118.149958,
+                34.145779
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the right.",
+            "modifier": "right",
+            "bearing_after": 0,
+            "bearing_before": 89,
+            "location": [
+              -118.149958,
+              34.145779
+            ]
+          },
+          "name": "East Colorado Boulevard",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "driving",
+          "ref": "US 66 HISTORIC",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.149958,
+                34.145779
+              ],
+              [
+                -118.149958,
+                34.145779
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "driving",
+    "speed": 12
+  },
+  {
+    "id": "drone_0",
+    "type": "drone",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 206120813,
+      "lon": -118.15058961510658,
+      "lat": 34.14619541889816,
+      "type": "building",
+      "priority_score": 0.018483827514638996
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.150475,
+          34.145775
+        ],
+        [
+          -118.15058961510658,
+          34.14619541889816
+        ]
+      ],
+      "distance": 47.923572255098186,
+      "duration": 3.1949048170065457,
+      "type": "straight_line"
+    },
+    "profile": null,
+    "speed": 15
+  },
+  {
+    "id": "drone_1",
+    "type": "drone",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 206120800,
+      "lon": -118.15058961510658,
+      "lat": 34.14627311248387,
+      "type": "building",
+      "priority_score": 0.017117897795317524
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.150475,
+          34.145775
+        ],
+        [
+          -118.15058961510658,
+          34.14627311248387
+        ]
+      ],
+      "distance": 56.38293514001826,
+      "duration": 3.758862342667884,
+      "type": "straight_line"
+    },
+    "profile": null,
+    "speed": 15
+  },
+  {
+    "id": "drone_2",
+    "type": "drone",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 200543169,
+      "lon": -118.15037906169891,
+      "lat": 34.14590240244631,
+      "type": "building",
+      "priority_score": 0.012946265878641684
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.150475,
+          34.145775
+        ],
+        [
+          -118.15037906169891,
+          34.14590240244631
+        ]
+      ],
+      "distance": 16.69246111180199,
+      "duration": 1.1128307407867992,
+      "type": "straight_line"
+    },
+    "profile": null,
+    "speed": 15
+  },
+  {
+    "id": "volunteer_0",
+    "type": "volunteer",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 673270081,
+      "lon": -118.15098658204079,
+      "lat": 34.14605446035311,
+      "type": "building",
+      "priority_score": 0.01195569467275036
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150571,
+          34.145866
+        ],
+        [
+          -118.150587,
+          34.145888
+        ],
+        [
+          -118.150609,
+          34.14588
+        ],
+        [
+          -118.151066,
+          34.145884
+        ],
+        [
+          -118.151095,
+          34.145884
+        ],
+        [
+          -118.151096,
+          34.146054
+        ]
+      ],
+      "distance": 81.924,
+      "duration": 32.769600000000004,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                320
+              ],
+              "duration": 9.816,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 9.816,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "bearings": [
+                140,
+                329
+              ],
+              "entry": [
+                false,
+                true
+              ],
+              "in": 0,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 1,
+              "geometry_index": 1,
+              "location": [
+                -118.150571,
+                34.145866
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Walk northwest on the walkway.",
+            "bearing_after": 320,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "",
+          "duration": 11.829,
+          "distance": 16.008,
+          "driving_side": "right",
+          "weight": 11.829,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150571,
+                34.145866
+              ],
+              [
+                -118.150587,
+                34.145888
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                4,
+                90,
+                149,
+                196,
+                267
+              ],
+              "entry": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ],
+              "in": 2,
+              "turn_weight": 2,
+              "turn_duration": 2,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 4,
+              "geometry_index": 2,
+              "location": [
+                -118.150587,
+                34.145888
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "turn",
+            "instruction": "Turn left onto the walkway.",
+            "modifier": "left",
+            "bearing_after": 267,
+            "bearing_before": 329,
+            "location": [
+              -118.150587,
+              34.145888
+            ]
+          },
+          "name": "",
+          "duration": 35.092,
+          "distance": 46.991,
+          "driving_side": "right",
+          "weight": 35.092,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150587,
+                34.145888
+              ],
+              [
+                -118.150609,
+                34.14588
+              ],
+              [
+                -118.151066,
+                34.145884
+              ],
+              [
+                -118.151095,
+                34.145884
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                90,
+                182,
+                270,
+                360
+              ],
+              "entry": [
+                false,
+                true,
+                true,
+                true
+              ],
+              "in": 0,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 3,
+              "geometry_index": 5,
+              "location": [
+                -118.151095,
+                34.145884
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "turn",
+            "instruction": "Turn right onto the walkway.",
+            "modifier": "right",
+            "bearing_after": 360,
+            "bearing_before": 270,
+            "location": [
+              -118.151095,
+              34.145884
+            ]
+          },
+          "name": "",
+          "duration": 14.3,
+          "distance": 18.925,
+          "driving_side": "right",
+          "weight": 14.3,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.151095,
+                34.145884
+              ],
+              [
+                -118.151096,
+                34.146054
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                180
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 6,
+              "location": [
+                -118.151096,
+                34.146054
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the right.",
+            "modifier": "right",
+            "bearing_after": 0,
+            "bearing_before": 360,
+            "location": [
+              -118.151096,
+              34.146054
+            ]
+          },
+          "name": "",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.151096,
+                34.146054
+              ],
+              [
+                -118.151096,
+                34.146054
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "walking",
+    "speed": 2.5
+  },
+  {
+    "id": "volunteer_1",
+    "type": "volunteer",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 673270915,
+      "lon": -118.1509879231453,
+      "lat": 34.14612660451972,
+      "type": "building",
+      "priority_score": 0.011473870488946318
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150571,
+          34.145866
+        ],
+        [
+          -118.150587,
+          34.145888
+        ],
+        [
+          -118.150609,
+          34.14588
+        ],
+        [
+          -118.151066,
+          34.145884
+        ],
+        [
+          -118.151095,
+          34.145884
+        ],
+        [
+          -118.151097,
+          34.146212
+        ],
+        [
+          -118.150988,
+          34.146212
+        ]
+      ],
+      "distance": 109.562,
+      "duration": 43.824799999999996,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                320
+              ],
+              "duration": 9.816,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 9.816,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "bearings": [
+                140,
+                329
+              ],
+              "entry": [
+                false,
+                true
+              ],
+              "in": 0,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 1,
+              "geometry_index": 1,
+              "location": [
+                -118.150571,
+                34.145866
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Walk northwest on the walkway.",
+            "bearing_after": 320,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "",
+          "duration": 11.829,
+          "distance": 16.008,
+          "driving_side": "right",
+          "weight": 11.829,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150571,
+                34.145866
+              ],
+              [
+                -118.150587,
+                34.145888
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                4,
+                90,
+                149,
+                196,
+                267
+              ],
+              "entry": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ],
+              "in": 2,
+              "turn_weight": 2,
+              "turn_duration": 2,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 4,
+              "geometry_index": 2,
+              "location": [
+                -118.150587,
+                34.145888
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "turn",
+            "instruction": "Turn left onto the walkway.",
+            "modifier": "left",
+            "bearing_after": 267,
+            "bearing_before": 329,
+            "location": [
+              -118.150587,
+              34.145888
+            ]
+          },
+          "name": "",
+          "duration": 35.092,
+          "distance": 46.991,
+          "driving_side": "right",
+          "weight": 35.092,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150587,
+                34.145888
+              ],
+              [
+                -118.150609,
+                34.14588
+              ],
+              [
+                -118.151066,
+                34.145884
+              ],
+              [
+                -118.151095,
+                34.145884
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                90,
+                182,
+                270,
+                360
+              ],
+              "entry": [
+                false,
+                true,
+                true,
+                true
+              ],
+              "in": 0,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 3,
+              "geometry_index": 5,
+              "location": [
+                -118.151095,
+                34.145884
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "turn",
+            "instruction": "Turn right onto the walkway.",
+            "modifier": "right",
+            "bearing_after": 360,
+            "bearing_before": 270,
+            "location": [
+              -118.151095,
+              34.145884
+            ]
+          },
+          "name": "",
+          "duration": 27.256,
+          "distance": 36.513,
+          "driving_side": "right",
+          "weight": 27.256,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.151095,
+                34.145884
+              ],
+              [
+                -118.151097,
+                34.146212
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                90,
+                180,
+                270
+              ],
+              "entry": [
+                true,
+                false,
+                true
+              ],
+              "in": 1,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "geometry_index": 6,
+              "location": [
+                -118.151097,
+                34.146212
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "turn",
+            "instruction": "Turn right onto the walkway.",
+            "modifier": "right",
+            "bearing_after": 90,
+            "bearing_before": 360,
+            "location": [
+              -118.151097,
+              34.146212
+            ]
+          },
+          "name": "",
+          "duration": 7.091,
+          "distance": 10.049,
+          "driving_side": "right",
+          "weight": 7.091,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.151097,
+                34.146212
+              ],
+              [
+                -118.150988,
+                34.146212
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                270
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 7,
+              "location": [
+                -118.150988,
+                34.146212
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the right.",
+            "modifier": "right",
+            "bearing_after": 0,
+            "bearing_before": 90,
+            "location": [
+              -118.150988,
+              34.146212
+            ]
+          },
+          "name": "",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150988,
+                34.146212
+              ],
+              [
+                -118.150988,
+                34.146212
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "walking",
+    "speed": 2.5
+  },
+  {
+    "id": "volunteer_2",
+    "type": "volunteer",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 200543153,
+      "lon": -118.14958244562149,
+      "lat": 34.145906842097105,
+      "type": "building",
+      "priority_score": 0.011420837511737988
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150392,
+          34.145869
+        ],
+        [
+          -118.150375,
+          34.14589
+        ],
+        [
+          -118.150331,
+          34.145887
+        ],
+        [
+          -118.149582,
+          34.145891
+        ]
+      ],
+      "distance": 89.094,
+      "duration": 35.6376,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                38
+              ],
+              "duration": 9.881,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 9.881,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "bearings": [
+                34,
+                218
+              ],
+              "entry": [
+                true,
+                false
+              ],
+              "in": 1,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "geometry_index": 1,
+              "location": [
+                -118.150392,
+                34.145869
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Walk northeast on the walkway.",
+            "bearing_after": 38,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "",
+          "duration": 11.863,
+          "distance": 16.051,
+          "driving_side": "right",
+          "weight": 11.863,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150392,
+                34.145869
+              ],
+              [
+                -118.150375,
+                34.14589
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                91,
+                166,
+                214,
+                275,
+                352
+              ],
+              "entry": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ],
+              "in": 2,
+              "turn_weight": 1,
+              "turn_duration": 1,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "geometry_index": 2,
+              "location": [
+                -118.150375,
+                34.14589
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "turn",
+            "instruction": "Turn right onto the walkway.",
+            "modifier": "right",
+            "bearing_after": 91,
+            "bearing_before": 34,
+            "location": [
+              -118.150375,
+              34.14589
+            ]
+          },
+          "name": "",
+          "duration": 52.267,
+          "distance": 73.043,
+          "driving_side": "right",
+          "weight": 52.267,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150375,
+                34.14589
+              ],
+              [
+                -118.150331,
+                34.145887
+              ],
+              [
+                -118.149582,
+                34.145891
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                270
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 4,
+              "location": [
+                -118.149582,
+                34.145891
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the left.",
+            "modifier": "left",
+            "bearing_after": 0,
+            "bearing_before": 90,
+            "location": [
+              -118.149582,
+              34.145891
+            ]
+          },
+          "name": "",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.149582,
+                34.145891
+              ],
+              [
+                -118.149582,
+                34.145891
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "walking",
+    "speed": 2.5
+  },
+  {
+    "id": "volunteer_3",
+    "type": "volunteer",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 206120802,
+      "lon": -118.15121725201607,
+      "lat": 34.14590018262082,
+      "type": "building",
+      "priority_score": 0.010860134322013017
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150571,
+          34.145866
+        ],
+        [
+          -118.150587,
+          34.145888
+        ],
+        [
+          -118.150609,
+          34.14588
+        ],
+        [
+          -118.151066,
+          34.145884
+        ],
+        [
+          -118.151095,
+          34.145884
+        ],
+        [
+          -118.151217,
+          34.145883
+        ]
+      ],
+      "distance": 74.252,
+      "duration": 29.700799999999997,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                320
+              ],
+              "duration": 9.816,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 9.816,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "bearings": [
+                140,
+                329
+              ],
+              "entry": [
+                false,
+                true
+              ],
+              "in": 0,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 1,
+              "geometry_index": 1,
+              "location": [
+                -118.150571,
+                34.145866
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Walk northwest on the walkway.",
+            "bearing_after": 320,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "",
+          "duration": 11.829,
+          "distance": 16.008,
+          "driving_side": "right",
+          "weight": 11.829,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150571,
+                34.145866
+              ],
+              [
+                -118.150587,
+                34.145888
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "entry": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ],
+              "in": 2,
+              "bearings": [
+                4,
+                90,
+                149,
+                196,
+                267
+              ],
+              "duration": 35.092,
+              "turn_weight": 2,
+              "turn_duration": 2,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 4,
+              "weight": 35.092,
+              "geometry_index": 2,
+              "location": [
+                -118.150587,
+                34.145888
+              ]
+            },
+            {
+              "bearings": [
+                0,
+                90,
+                182,
+                270
+              ],
+              "entry": [
+                true,
+                false,
+                true,
+                true
+              ],
+              "in": 1,
+              "turn_weight": 1,
+              "turn_duration": 1,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 3,
+              "geometry_index": 5,
+              "location": [
+                -118.151095,
+                34.145884
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "turn",
+            "instruction": "Turn left onto the walkway.",
+            "modifier": "left",
+            "bearing_after": 267,
+            "bearing_before": 329,
+            "location": [
+              -118.150587,
+              34.145888
+            ]
+          },
+          "name": "",
+          "duration": 43.977,
+          "distance": 58.244,
+          "driving_side": "right",
+          "weight": 43.977,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150587,
+                34.145888
+              ],
+              [
+                -118.150609,
+                34.14588
+              ],
+              [
+                -118.151066,
+                34.145884
+              ],
+              [
+                -118.151095,
+                34.145884
+              ],
+              [
+                -118.151217,
+                34.145883
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                90
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 6,
+              "location": [
+                -118.151217,
+                34.145883
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the right.",
+            "modifier": "right",
+            "bearing_after": 0,
+            "bearing_before": 270,
+            "location": [
+              -118.151217,
+              34.145883
+            ]
+          },
+          "name": "",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.151217,
+                34.145883
+              ],
+              [
+                -118.151217,
+                34.145883
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "walking",
+    "speed": 2.5
+  },
+  {
+    "id": "volunteer_4",
+    "type": "volunteer",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 669271424,
+      "lon": -118.15038174390793,
+      "lat": 34.14612216488047,
+      "type": "building",
+      "priority_score": 0.0108459777551468
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150392,
+          34.145869
+        ],
+        [
+          -118.150375,
+          34.14589
+        ],
+        [
+          -118.150397,
+          34.145916
+        ],
+        [
+          -118.150399,
+          34.146122
+        ]
+      ],
+      "distance": 42.52,
+      "duration": 17.008000000000003,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                38
+              ],
+              "duration": 9.881,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 9.881,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "entry": [
+                true,
+                false
+              ],
+              "in": 1,
+              "bearings": [
+                34,
+                218
+              ],
+              "duration": 1.982,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 1.982,
+              "geometry_index": 1,
+              "location": [
+                -118.150392,
+                34.145869
+              ]
+            },
+            {
+              "bearings": [
+                92,
+                166,
+                214,
+                275,
+                352
+              ],
+              "entry": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ],
+              "in": 2,
+              "turn_weight": 1,
+              "turn_duration": 1,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 4,
+              "geometry_index": 2,
+              "location": [
+                -118.150375,
+                34.14589
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Walk northeast on the walkway.",
+            "bearing_after": 38,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "",
+          "duration": 32.551,
+          "distance": 42.52,
+          "driving_side": "right",
+          "weight": 32.551,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150392,
+                34.145869
+              ],
+              [
+                -118.150375,
+                34.14589
+              ],
+              [
+                -118.150397,
+                34.145916
+              ],
+              [
+                -118.150399,
+                34.146122
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                179
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 4,
+              "location": [
+                -118.150399,
+                34.146122
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the right.",
+            "modifier": "right",
+            "bearing_after": 0,
+            "bearing_before": 359,
+            "location": [
+              -118.150399,
+              34.146122
+            ]
+          },
+          "name": "",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150399,
+                34.146122
+              ],
+              [
+                -118.150399,
+                34.146122
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "walking",
+    "speed": 2.5
+  },
+  {
+    "id": "volunteer_5",
+    "type": "volunteer",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 1288840249,
+      "lon": -118.15038174390793,
+      "lat": 34.146388542822095,
+      "type": "building",
+      "priority_score": 0.010058542358647359
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150392,
+          34.145869
+        ],
+        [
+          -118.150375,
+          34.14589
+        ],
+        [
+          -118.150397,
+          34.145916
+        ],
+        [
+          -118.150401,
+          34.146246
+        ],
+        [
+          -118.150402,
+          34.146388
+        ]
+      ],
+      "distance": 72.176,
+      "duration": 28.8704,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                38
+              ],
+              "duration": 9.881,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 9.881,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "entry": [
+                true,
+                false
+              ],
+              "in": 1,
+              "bearings": [
+                34,
+                218
+              ],
+              "duration": 1.982,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 1.982,
+              "geometry_index": 1,
+              "location": [
+                -118.150392,
+                34.145869
+              ]
+            },
+            {
+              "entry": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ],
+              "in": 2,
+              "bearings": [
+                92,
+                166,
+                214,
+                275,
+                352
+              ],
+              "duration": 31.061,
+              "turn_weight": 1,
+              "turn_duration": 1,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 4,
+              "weight": 31.061,
+              "geometry_index": 2,
+              "location": [
+                -118.150375,
+                34.14589
+              ]
+            },
+            {
+              "bearings": [
+                90,
+                179,
+                270,
+                360
+              ],
+              "entry": [
+                true,
+                false,
+                true,
+                true
+              ],
+              "in": 1,
+              "turn_weight": 1,
+              "turn_duration": 1,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 3,
+              "geometry_index": 4,
+              "location": [
+                -118.150401,
+                34.146246
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Walk northeast on the walkway.",
+            "bearing_after": 38,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "",
+          "duration": 54.854,
+          "distance": 72.176,
+          "driving_side": "right",
+          "weight": 54.854,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150392,
+                34.145869
+              ],
+              [
+                -118.150375,
+                34.14589
+              ],
+              [
+                -118.150397,
+                34.145916
+              ],
+              [
+                -118.150401,
+                34.146246
+              ],
+              [
+                -118.150402,
+                34.146388
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                180
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 5,
+              "location": [
+                -118.150402,
+                34.146388
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the right.",
+            "modifier": "right",
+            "bearing_after": 0,
+            "bearing_before": 360,
+            "location": [
+              -118.150402,
+              34.146388
+            ]
+          },
+          "name": "",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150402,
+                34.146388
+              ],
+              [
+                -118.150402,
+                34.146388
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "walking",
+    "speed": 2.5
+  },
+  {
+    "id": "volunteer_6",
+    "type": "volunteer",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 206120809,
+      "lon": -118.15082028508186,
+      "lat": 34.145899072708076,
+      "type": "building",
+      "priority_score": 0.009596880699875169
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150571,
+          34.145866
+        ],
+        [
+          -118.150587,
+          34.145888
+        ],
+        [
+          -118.150609,
+          34.14588
+        ],
+        [
+          -118.150821,
+          34.145882
+        ]
+      ],
+      "distance": 37.709,
+      "duration": 15.0836,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                320
+              ],
+              "duration": 9.816,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 9.816,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "bearings": [
+                140,
+                329
+              ],
+              "entry": [
+                false,
+                true
+              ],
+              "in": 0,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 1,
+              "geometry_index": 1,
+              "location": [
+                -118.150571,
+                34.145866
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Walk northwest on the walkway.",
+            "bearing_after": 320,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "",
+          "duration": 11.829,
+          "distance": 16.008,
+          "driving_side": "right",
+          "weight": 11.829,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150571,
+                34.145866
+              ],
+              [
+                -118.150587,
+                34.145888
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                4,
+                90,
+                149,
+                196,
+                267
+              ],
+              "entry": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ],
+              "in": 2,
+              "turn_weight": 2,
+              "turn_duration": 2,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 4,
+              "geometry_index": 2,
+              "location": [
+                -118.150587,
+                34.145888
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "turn",
+            "instruction": "Turn left onto the walkway.",
+            "modifier": "left",
+            "bearing_after": 267,
+            "bearing_before": 329,
+            "location": [
+              -118.150587,
+              34.145888
+            ]
+          },
+          "name": "",
+          "duration": 17.279,
+          "distance": 21.701,
+          "driving_side": "right",
+          "weight": 17.279,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150587,
+                34.145888
+              ],
+              [
+                -118.150609,
+                34.14588
+              ],
+              [
+                -118.150821,
+                34.145882
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                91
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 4,
+              "location": [
+                -118.150821,
+                34.145882
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the right.",
+            "modifier": "right",
+            "bearing_after": 0,
+            "bearing_before": 271,
+            "location": [
+              -118.150821,
+              34.145882
+            ]
+          },
+          "name": "",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150821,
+                34.145882
+              ],
+              [
+                -118.150821,
+                34.145882
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "walking",
+    "speed": 2.5
+  },
+  {
+    "id": "volunteer_7",
+    "type": "volunteer",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 206001564,
+      "lon": -118.1509704887867,
+      "lat": 34.14564823204941,
+      "type": "building",
+      "priority_score": 0.009538866331285464
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150572,
+          34.145678
+        ],
+        [
+          -118.150587,
+          34.145663
+        ],
+        [
+          -118.150616,
+          34.145669
+        ],
+        [
+          -118.15097,
+          34.145673
+        ]
+      ],
+      "distance": 51.268,
+      "duration": 20.5072,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                218
+              ],
+              "duration": 9.667,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 9.667,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "bearings": [
+                38,
+                220
+              ],
+              "entry": [
+                false,
+                true
+              ],
+              "in": 0,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 1,
+              "geometry_index": 1,
+              "location": [
+                -118.150572,
+                34.145678
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Walk southwest on the walkway.",
+            "bearing_after": 218,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "",
+          "duration": 11.194,
+          "distance": 15.895,
+          "driving_side": "right",
+          "weight": 11.194,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150572,
+                34.145678
+              ],
+              [
+                -118.150587,
+                34.145663
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                40,
+                99,
+                175,
+                273,
+                346
+              ],
+              "entry": [
+                false,
+                true,
+                true,
+                true,
+                true
+              ],
+              "in": 0,
+              "turn_weight": 1,
+              "turn_duration": 1,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 3,
+              "geometry_index": 2,
+              "location": [
+                -118.150587,
+                34.145663
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "turn",
+            "instruction": "Bear right onto the walkway.",
+            "modifier": "slight right",
+            "bearing_after": 273,
+            "bearing_before": 220,
+            "location": [
+              -118.150587,
+              34.145663
+            ]
+          },
+          "name": "",
+          "duration": 25.691,
+          "distance": 35.374,
+          "driving_side": "right",
+          "weight": 25.691,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150587,
+                34.145663
+              ],
+              [
+                -118.150616,
+                34.145669
+              ],
+              [
+                -118.15097,
+                34.145673
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                91
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 4,
+              "location": [
+                -118.15097,
+                34.145673
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the left.",
+            "modifier": "left",
+            "bearing_after": 0,
+            "bearing_before": 271,
+            "location": [
+              -118.15097,
+              34.145673
+            ]
+          },
+          "name": "",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15097,
+                34.145673
+              ],
+              [
+                -118.15097,
+                34.145673
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "walking",
+    "speed": 2.5
+  },
+  {
+    "id": "volunteer_8",
+    "type": "volunteer",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 1288810743,
+      "lon": -118.15038174390793,
+      "lat": 34.14662384263855,
+      "type": "building",
+      "priority_score": 0.009367723402245029
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150392,
+          34.145869
+        ],
+        [
+          -118.150375,
+          34.14589
+        ],
+        [
+          -118.150397,
+          34.145916
+        ],
+        [
+          -118.150401,
+          34.146246
+        ],
+        [
+          -118.150404,
+          34.146624
+        ]
+      ],
+      "distance": 98.369,
+      "duration": 39.3476,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                38
+              ],
+              "duration": 9.881,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 9.881,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "entry": [
+                true,
+                false
+              ],
+              "in": 1,
+              "bearings": [
+                34,
+                218
+              ],
+              "duration": 1.982,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 1.982,
+              "geometry_index": 1,
+              "location": [
+                -118.150392,
+                34.145869
+              ]
+            },
+            {
+              "entry": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ],
+              "in": 2,
+              "bearings": [
+                92,
+                166,
+                214,
+                275,
+                352
+              ],
+              "duration": 31.061,
+              "turn_weight": 1,
+              "turn_duration": 1,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 4,
+              "weight": 31.061,
+              "geometry_index": 2,
+              "location": [
+                -118.150375,
+                34.14589
+              ]
+            },
+            {
+              "bearings": [
+                90,
+                179,
+                270,
+                360
+              ],
+              "entry": [
+                true,
+                false,
+                true,
+                true
+              ],
+              "in": 1,
+              "turn_weight": 1,
+              "turn_duration": 1,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 3,
+              "geometry_index": 4,
+              "location": [
+                -118.150401,
+                34.146246
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Walk northeast on the walkway.",
+            "bearing_after": 38,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "",
+          "duration": 73.473,
+          "distance": 98.369,
+          "driving_side": "right",
+          "weight": 73.473,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150392,
+                34.145869
+              ],
+              [
+                -118.150375,
+                34.14589
+              ],
+              [
+                -118.150397,
+                34.145916
+              ],
+              [
+                -118.150401,
+                34.146246
+              ],
+              [
+                -118.150404,
+                34.146624
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                180
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 5,
+              "location": [
+                -118.150404,
+                34.146624
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the right.",
+            "modifier": "right",
+            "bearing_after": 0,
+            "bearing_before": 360,
+            "location": [
+              -118.150404,
+              34.146624
+            ]
+          },
+          "name": "",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.150404,
+                34.146624
+              ],
+              [
+                -118.150404,
+                34.146624
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "walking",
+    "speed": 2.5
+  },
+  {
+    "id": "volunteer_9",
+    "type": "volunteer",
+    "current_coords": [
+      -118.150475,
+      34.145775
+    ],
+    "target_building": {
+      "id": 206001559,
+      "lon": -118.15059497952461,
+      "lat": 34.145088832499766,
+      "type": "building",
+      "priority_score": 0.009180198330702636
+    },
+    "route": {
+      "geometry": [
+        [
+          -118.15048,
+          34.145775
+        ],
+        [
+          -118.150572,
+          34.145678
+        ],
+        [
+          -118.150587,
+          34.145663
+        ],
+        [
+          -118.150573,
+          34.14564
+        ],
+        [
+          -118.15057,
+          34.145089
+        ]
+      ],
+      "distance": 80.107,
+      "duration": 32.0428,
+      "steps": [
+        {
+          "intersections": [
+            {
+              "entry": [
+                true
+              ],
+              "bearings": [
+                218
+              ],
+              "duration": 9.667,
+              "traffic_signal": true,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 0,
+              "weight": 9.667,
+              "geometry_index": 0,
+              "location": [
+                -118.15048,
+                34.145775
+              ]
+            },
+            {
+              "entry": [
+                false,
+                true
+              ],
+              "in": 0,
+              "bearings": [
+                38,
+                220
+              ],
+              "duration": 1.526,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 1,
+              "weight": 1.526,
+              "geometry_index": 1,
+              "location": [
+                -118.150572,
+                34.145678
+              ]
+            },
+            {
+              "bearings": [
+                40,
+                99,
+                175,
+                273,
+                346
+              ],
+              "entry": [
+                false,
+                true,
+                true,
+                true,
+                true
+              ],
+              "in": 0,
+              "turn_weight": 1,
+              "turn_duration": 1,
+              "mapbox_streets_v8": {
+                "class": "service"
+              },
+              "is_urban": true,
+              "admin_index": 0,
+              "out": 2,
+              "geometry_index": 2,
+              "location": [
+                -118.150587,
+                34.145663
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "depart",
+            "instruction": "Walk southwest on the walkway.",
+            "bearing_after": 218,
+            "bearing_before": 0,
+            "location": [
+              -118.15048,
+              34.145775
+            ]
+          },
+          "name": "",
+          "duration": 52.76,
+          "distance": 80.107,
+          "driving_side": "right",
+          "weight": 52.76,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15048,
+                34.145775
+              ],
+              [
+                -118.150572,
+                34.145678
+              ],
+              [
+                -118.150587,
+                34.145663
+              ],
+              [
+                -118.150573,
+                34.14564
+              ],
+              [
+                -118.15057,
+                34.145089
+              ]
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "intersections": [
+            {
+              "bearings": [
+                0
+              ],
+              "entry": [
+                true
+              ],
+              "in": 0,
+              "admin_index": 0,
+              "geometry_index": 4,
+              "location": [
+                -118.15057,
+                34.145089
+              ]
+            }
+          ],
+          "maneuver": {
+            "type": "arrive",
+            "instruction": "Your destination is on the right.",
+            "modifier": "right",
+            "bearing_after": 0,
+            "bearing_before": 180,
+            "location": [
+              -118.15057,
+              34.145089
+            ]
+          },
+          "name": "",
+          "duration": 0,
+          "distance": 0,
+          "driving_side": "right",
+          "weight": 0,
+          "mode": "walking",
+          "geometry": {
+            "coordinates": [
+              [
+                -118.15057,
+                34.145089
+              ],
+              [
+                -118.15057,
+                34.145089
+              ]
+            ],
+            "type": "LineString"
+          }
+        }
+      ]
+    },
+    "profile": "walking",
+    "speed": 2.5
+  }
+]
